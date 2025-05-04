@@ -1,0 +1,82 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    
+}
+.logo-container img {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+}
+.navbar-logo {
+    max-height: 50px; /* or whatever size you want */
+    width: auto;
+}
+
+
+
+.navbar {
+    padding: 1rem 2rem;
+}
+.nav-item{
+    font-weight: bold;
+    padding-right: 50px;
+}
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0d6efd;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd;
+}
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0d6efd;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

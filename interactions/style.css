@@ -1,0 +1,433 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+/* -------------Navbar -----------*/
+.logo-container {
+    display: flex;
+    justify-content: center;
+    
+}
+.logo-container img {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+}
+.navbar-logo {
+    width: 50px;
+    height: auto;
+}
+
+.display-4 {
+    color: rgb(255, 255, 255);
+}
+
+.navbar {
+    padding: 1rem 2rem;
+}
+.nav-item{
+    font-weight: bold;
+    padding-right: 50px;
+}
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-links {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0d6efd;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd;
+}
+
+/* -------------Hero Section -----------*/
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8rem 10%;
+    background-color: #7894d4;
+}
+
+.img-fluid {
+    width: auto;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.hero-text {
+    max-width: 500px;
+    text-align: left;
+}
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.hero-text p {
+    font-size: 1.2rem;
+    color: #fdfafa;
+}
+.book-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+}
+.lead {
+    color: #ffffff;
+}
+.basic-hero {
+    background-image: url('/web-proto/pictures/preview.webp'); /* Ensure correct file name */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    height: 100vh;
+}
+
+.basic-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.basic-hero * {
+    position: relative;
+    z-index: 2;
+}
+
+.specialized-hero{
+    background-image: url('/web-proto/pictures/spec.png'); /* Ensure correct file name */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    height: 100vh;
+}
+.specialized-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.specialized-hero * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* -------------About Section -----------*/
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10%;
+    background-color: #fff;
+}
+.about-text {
+    max-width: 500px;
+}
+.about-section img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.service-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.service-btn2 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* -------------Contact -----------*/
+
+  /* Contact Section */
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 8%;
+    gap: 2rem;
+    background-color: #7894d4 ;
+}
+.locations {
+    width: 40%;
+}
+.locations h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.locations p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+.contact-form {
+    width: 50%;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.form-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+.form-group {
+    width: 50%;
+}
+.btn-submit {
+    background-color: green;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+}
+.btn-submit:hover {
+    background-color: darkgreen;
+}
+/* -------------Footer -----------*/
+footer {
+    background-color: #212529;
+   
+    text-align: center;
+    padding: 2rem;
+    
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0d6efd;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.faq-section {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+.accordion-button {
+    background-color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-size: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ddd;
+    color: #000;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem #666;
+}
+
+.accordion-body {
+    padding: 15px;
+    font-size: 16px;
+    color: #666;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.faq-section h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* team page */
+.process-section {
+    background-color: #f7fafe;
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    color: #1a3c6e;
+    font-size: 2.2rem;
+  }
+  
+  .title-underline {
+    height: 3px;
+    width: 70px;
+    background: #4a9fff;
+    margin: 0 auto;
+  }
+  
+  .subtitle {
+    color: #4a5568;
+    font-size: 1.2rem;
+  }
+  
+  /* Timeline bar */
+  .timeline-bar {
+    height: 4px;
+    background: linear-gradient(to right, #4a9fff, #1a73e8);
+    border-radius: 2px;
+  }
+  
+  /* Timeline items container */
+  .timeline-items {
+    margin-top: 20px;
+  }
+  
+  /* Individual timeline item */
+  .timeline-box {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border-top: 3px solid #1a73e8;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Icon styling */
+  .icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .process-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Text styling */
+  .step-title {
+    color: #1a3c6e;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .step-text {
+    color: #4a5568;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 991px) {
+    .timeline-items {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding-bottom: 15px;
+    }
+    
+    .col-md {
+      flex: 0 0 250px;
+      max-width: none;
+      padding: 0 10px;
+    }
+    
+    .timeline-box {
+      margin-bottom: 0;
+    }
+  }
